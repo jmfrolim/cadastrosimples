@@ -90,7 +90,31 @@ namespace ItensLista
         public Alface()
             : base(NOME,CALORIAS,PRECO,UNIDADE)
         { }
+    }
 
+    public class Queijo : Matinal 
 
+    {
+        private const string NOME = "Queijo";
+        private const double CALORIAS = 200;
+        private const double PRECO = 15.00;
+        private const string UNIDADE = "KG";
+        public Queijo() 
+            : base(NOME, CALORIAS, PRECO, UNIDADE) { }
+    }
+
+    public class Guarana : Bebida
+    {
+        private const string NOME = "Guarana";
+        private const double CALORIAS = 150;
+        private const double PRECO = 2.00;
+        private const string UNIDADE = "Litro";
+        public Guarana ()
+            : base(NOME, CALORIAS, PRECO, UNIDADE) { }
+    }
+
+    public class Presunto : Proteina
+    {
+        private const string NOME = "Presunto";
     }
 }
