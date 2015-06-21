@@ -1,4 +1,4 @@
-# cadastrosimples
+# Cadastro Simples
 Projeto básico C# 
 
 Esse projeto mostra um codigo C# simples  que explora melhor a OO e o uso de herança com Interface!
