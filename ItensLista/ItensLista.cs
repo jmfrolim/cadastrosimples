@@ -116,5 +116,23 @@ namespace ItensLista
     public class Presunto : Proteina
     {
         private const string NOME = "Presunto";
+        private const double CALORIAS = 300;
+        private const double PRECO = 5.00;
+        private const string UNIDADE = "KG";
+        public Presunto ()
+            : base(NOME, CALORIAS, PRECO, UNIDADE) { }
     }
+
+    public class Salmao : Peixe
+    {
+        private const string NOME = "Salmao";
+        private const double CALORIAS = 120;
+        private const double PRECO = 6.00;
+        private const string UNIDADE = "KG";
+        public  Salmao ()
+            : base(NOME, CALORIAS, PRECO, UNIDADE) {}
+    }
+
+
+
 }

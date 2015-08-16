@@ -77,6 +77,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ItensLista\ItensLista.csproj">
+      <Project>{7f6d38ca-d8e0-4b15-adf0-49c233df0baa}</Project>
+      <Name>ItensLista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ListaComprasModel\ListaComprasModel.csproj">
+      <Project>{58562c87-96dd-4d54-bde2-6d195280df16}</Project>
+      <Name>ListaComprasModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
