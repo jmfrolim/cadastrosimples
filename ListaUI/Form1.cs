@@ -124,5 +124,29 @@ namespace ListaUI
                 erro1.SetError(lbListaItens, "Selecione o Item da Lista!");
             }
         }
+
+        private void bntRemover_Click(object sender, EventArgs e)
+        {
+            erro1.Clear();
+            try
+            {
+                Alimento item = (Alimento)lbListaItens.Items[lbListaItens.SelectedIndex];
+                item.ResetarCusto();
+                totalCompras -= item.Custo;
+                textQuantidade.Clear();
+                textCustoTotal.Clear();
+                textTotalLista.Clear();
+
+                if (totalCompras != 0)
+                {
+                    textTotalLista.Text = totalCompras.ToString("C");
+                }
+
+            }
+            catch  (ArgumentOutOfRangeException)
+            {
+                erro1.SetError(lbListaItens, "Selecione um Valor");
+            }
+        }
     }
 }

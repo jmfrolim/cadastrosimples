@@ -134,6 +134,7 @@
             this.bntRemover.TabIndex = 9;
             this.bntRemover.Text = "Remover";
             this.bntRemover.UseVisualStyleBackColor = true;
+            this.bntRemover.Click += new System.EventHandler(this.bntRemover_Click);
             // 
             // bntLimparLista
             // 
@@ -258,7 +259,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox lbListaItens;
         private System.Windows.Forms.Label labelTipo;
         private System.Windows.Forms.Label lblUnidade;
         private System.Windows.Forms.Label label3;
@@ -278,6 +278,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textTotalLista;
+        private System.Windows.Forms.ListBox lbListaItens;
     }
 }
 
